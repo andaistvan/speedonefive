@@ -5,24 +5,53 @@
  * Contains the closing of the #content div and all content after.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package speedonefive
  */
-
 ?>
+</div><!-- #content -->
 
-	</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+   <div class="main-container">
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'speedonefive' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'speedonefive' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'speedonefive' ), 'speedonefive', '<a href="http://underscores.me/" rel="designer">Istvan Anda</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+   </div>
+
+</footer><!-- #colophon -->
+
 </div><!-- #page -->
 
+<!-- **********  off canvas  *************-->
+   </div><!-- off-canvas-content -->
+</div><!-- off-canvas-wrapper-inner -->
+</div><!-- off-canvas-wrapper -->
+<!-- **********  off canvas  *************-->
+
 <?php wp_footer(); ?>
+
+<script type="text/javascript">
+$(document).foundation();
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+WebFont.load({
+google: {
+   families: ['Amatic SC', 'cursive']
+}
+});
+</script>
+<script>
+WebFont.load({
+google: {
+   families: ['Didact Gothic', 'sans-serif']
+}
+});
+</script>
+<script>
+WebFont.load({
+google: {
+   families: ['Josefin Sans', 'sans-serif']
+}
+});
+</script>
 
 </body>
 </html>
